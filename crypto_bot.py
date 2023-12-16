@@ -89,7 +89,7 @@ class TradingBot:
 
         if self.save_signal % self.save_thresh == 0 and self.save_to_excel == True:  # save history to Excel file
             date = str(datetime.datetime.now())[:10]
-            self.transaction_table.to_excel(f"C:\\Users\\Jesse\\Desktop\\Crypto\\auto_trader_{date}.xlsx",
+            self.transaction_table.to_excel(f"{working_directory}\\auto_trader_{date}.xlsx",
                                             sheet_name='1.25% Sell Thresh', index=False, header=True)
             self.save_signal = 0
 
