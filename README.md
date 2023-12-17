@@ -82,7 +82,7 @@ and "LRC-USD". Here are some sample results that were achieved by starting with 
 >Trading results between January 12, 2023 and January 14, 2023.
 
 Using a manually-selected profit sell threshold of 0.75% and a loss sell threshold of -0.5%, this graph shows a net positive 
-profit trend for the given time period. The gross value, which includes the value of the fees with the net value, suggests 
+profit trend for the given time period. The gross value, which includes the cost of the fees added to the net value, suggests 
 that the bot may do well enough to cover the cost of trading while also making a small profit. 
 
 ### Sample 2: Historical Calibration
