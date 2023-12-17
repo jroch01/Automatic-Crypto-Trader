@@ -1,12 +1,12 @@
 import time
-import yfinance as yf  # data source
+import yfinance as yf
 import datetime
 import pandas as pd
 import openpyxl
 import warnings
 
-working_directory = "<path to working directory>"
-yf.set_tz_cache_location("<path to desired cache storage location>")  # set cache folder location
+working_directory = "."  # path to project directory
+yf.set_tz_cache_location(".")  # set cache folder location
 
 warnings.simplefilter(action='ignore', category=FutureWarning)  # prevent warnings from clogging terminal
 
@@ -15,7 +15,7 @@ class TradingBot:
 
     def __init__(self):
         self.initialized_time = str(datetime.datetime.now())[:19]
-        self.save_to_excel = True
+        self.save_to_excel = True  # save results to excel in working directory
         self.save_thresh = 5  # number of completed trades before saving history to excel if option is enabled
         self.profit_sell_thresh = 3.1  # 0.75 [%] minimum threshold to be met before selling for a profit
         self.loss_sell_thresh = -1.8  # -0.5   [%] maximum percentage drop before cutting losses
@@ -34,9 +34,7 @@ class TradingBot:
         self.buy_count = 0
         self.sell_count = 0
         self.net_value = 0
-        self.ticker = ["AAVE-USD", "BTU-USD", "BZRX-USD", "LINK-USD", "CRV-USD", "DPR-USD", "DGD-USD",
-                       "ENS-USD", "ETH-USD", "PNK-USD", "LRC-USD", "PNT5794-USD", "RENBTC-USD", "UNI7083-USD"]
-
+        self.ticker = ["AAVE-USD", "LINK-USD", "CRV-USD", "ENS-USD", "ETH-USD", "LRC-USD"]
 
         self.fee_total = 0.0
         self.buy_thresh = 0
