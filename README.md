@@ -32,7 +32,7 @@ To avoid conflicts with other Python projects or system-wide packages, it's reco
      ```bash
      source venv/bin/activate
 
-4. **Activate the Virtual Environment:**
+4. **Install the Requirements:**
 
    With the virtual environment activated, install the required packages using:
    ```bash
