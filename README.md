@@ -28,9 +28,6 @@ To avoid conflicts with other Python projects or system-wide packages, it's reco
      ```bash
      .\venv\Scripts\activate
      ```
-   - **On Linux and macOS:**
-     ```bash
-     source venv/bin/activate
 
 4. **Install the Requirements:**
 
