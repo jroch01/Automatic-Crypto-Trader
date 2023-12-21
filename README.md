@@ -23,13 +23,13 @@ To avoid conflicts with other Python projects or system-wide packages, it's reco
    ```bash
    python -m venv venv
    ```
-3. **Activate the Virtual Environment:**
-- **On Windows:**
-  ```bash
-  .\venv\Scripts\activate
-  ```
+2. **Activate the Virtual Environment:**
 
-4. **Install the Requirements:**
+     ```bash
+     .\venv\Scripts\activate
+     ```
+
+3. **Install the Requirements:**
 
    With the virtual environment activated, install the required packages using:
    ```bash
