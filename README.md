@@ -24,10 +24,10 @@ To avoid conflicts with other Python projects or system-wide packages, it's reco
    python -m venv venv
    ```
 3. **Activate the Virtual Environment:**
-   - **On Windows:**
-     ```bash
-     .\venv\Scripts\activate
-     ```
+- **On Windows:**
+  ```bash
+  .\venv\Scripts\activate
+  ```
 
 4. **Install the Requirements:**
 
